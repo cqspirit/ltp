@@ -24,7 +24,7 @@ std::mutex DepSRL::mtx;
 int DepSRL::LoadResource(const string &modelFile)
 {
     dynet::DynetParams params;
-    params.mem_descriptor = "2000";
+    params.mem_descriptor = "4000";
     dynet::initialize(params);
 
     ifstream in(modelFile, ios::binary);
